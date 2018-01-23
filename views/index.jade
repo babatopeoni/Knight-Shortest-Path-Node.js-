@@ -1,0 +1,27 @@
+extends layout/master
+
+block content
+    h1#info Select starting position 
+    h3#source
+    h3#destination
+    .chessboard
+        - var lineFlip = false
+        - var rowIndex = 9;
+        - files = ['a','b','c','d','e','f','g','h'];
+        each _, i in Array(64)
+            if( i % 8 == 0 )
+                - lineFlip = ( lineFlip ) ? false : true;
+                - rowIndex--
+            if( i % 2)
+                if( lineFlip )
+                    .square.black(data-index="#{i}" data-name="#{ files[ (i % 8) ] + rowIndex}")
+                else
+                    .square.white(data-index="#{i}" data-name="#{ files[ (i % 8) ] + rowIndex}")
+            else
+                if( lineFlip )
+                    .square.white(data-index="#{i}" data-name="#{ files[ (i % 8) ] + rowIndex}")
+                else
+                    .square.black(data-index="#{i}" data-name="#{ files[ (i % 8) ] + rowIndex}")
+            
+
+    

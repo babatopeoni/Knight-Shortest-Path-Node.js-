@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#info, #source, #destination{
+  text-align: center;
+}
+
+
+.chessboard {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  border: 25px solid #fff1e4;
+}
+
+.black {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(207, 139, 77);
+  font-size: 35px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.white {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(254, 206, 161);
+  font-size: 35px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.button {
+  text-align: center;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
